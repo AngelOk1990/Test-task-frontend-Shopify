@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.text {
+  font-family: 'Arial', sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+  margin-bottom: 60px;     
+}
+
+.cards__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 380px;
+  max-height: 482px;
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+}
+
+.item__new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  background: #FDCFF3;
+  border-radius: 8px;
+  width: 111px;
+  height: 25px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.item__last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  background: #FFCF56;
+  border-radius: 8px; 
+  padding: 0 14px;
+  width: 136px;
+  height: 25px;
+  position: absolute;
+  top: 16px;
+  right: 101px;
+}
+
+.item__image {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 12px 12px 0 0;
+}
+
+.item__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 24px 16px 24px;
+}
+
+.item__text {
+  font-size: 16px;
+  line-height: 24px;
+  height: 96px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 0;
+}
+
+.item__button {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #42940F;
+  width: 332px;
+  height: 48px;
+  border: 2px solid #42940F;
+  border-radius: 8px;
+  margin: 9.5px auto 24px auto;
+}
+
+.item__button:hover {
+  background-color: #42940F;
+  border: 2px solid #42940F;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.item__button:active {
+  background-color: #1F5200;
+  border: 2px solid #1F5200;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.ended {
+  background-color: #4E4E4E;
+  border: 1px solid #4E4E4E;
+  color: #FFFFFF;
+}
+
+.ended:hover, .ended:active {
+  background-color: #4E4E4E;
+  border: 1px solid #4E4E4E;
+  color: #FFFFFF;
+}
+
+@media(max-width:1279px) {
+.section__title {
+    font-size: 42px;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.item__last {
+   top: 45px;
+   left: 16px; 
+}
+}
+
+@media(max-width:767px) {
+    .section__title {
+        font-size: 36px;
+    }
+}
